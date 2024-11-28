@@ -1,15 +1,12 @@
 import styles from "./page.module.css";
+import ListBoards from "@/features/list-boards/list-boards";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <h1>Add or select a board to begin...</h1>
+        <ListBoards />
       </main>
     </div>
   );
